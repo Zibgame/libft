@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/14 20:37:55 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/14 20:42:02 by zcadinot         ###   ########.fr       */
+/*   Created: 2025/10/12 21:22:11 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/10/12 21:28:57 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
-{
-	int	len;
+#include "libft.h"
 
-	len = 0;
-	while (str[len] != '\0')
-	{
-		len++;
-	}
-	return (len);
+void ft_putchar(char c)
+{
+	write(1,&c,1);
 }

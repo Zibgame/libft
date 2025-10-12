@@ -1,23 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/14 20:37:55 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/14 20:42:02 by zcadinot         ###   ########.fr       */
+/*   Created: 2025/07/14 21:01:20 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/07/14 23:44:37 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+int	ft_atoi(char *str)
 {
-	int	len;
+	int	i;
+	int	signe;
+	int	res;
 
-	len = 0;
-	while (str[len] != '\0')
+	i = 0;
+	signe = 1;
+	res = 0;
+	while ((str[i] == ' ') || (str[i] >= 9 && str[i] <= 13))
 	{
-		len++;
+		i++;
 	}
-	return (len);
+	while (str[i] == '+' || str[i] == '-')
+	{
+		if (str[i] == '-')
+			signe *= -1;
+		i++;
+	}
+	while (str[i] >= '0' && str[i] <= '9')
+	{
+		res = res * 10 + (str[i] - 48);
+		i++;
+	}
+	return (signe * res);
 }
