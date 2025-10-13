@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/12 20:58:37 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/12 21:35:17 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/13 14:29:58 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 char	*ft_strdup(const char *s1);
 
 void	ft_putchar(char c);
+
+int	ft_isdigit(char c);
+
+int	ft_tolower(int c);
+int	ft_toupper(int c);
+int	ft_isalpha(char c);
+int	ft_isalnum(int c);
+int	ft_isascii(int c);
+int ft_isprint(int c);
 
 char	**ft_split(char const *s, char c);
 char	*ft_strjoin(char const *s1, char const *s2);
