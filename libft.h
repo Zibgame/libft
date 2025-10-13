@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/12 20:58:37 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/13 14:29:58 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/13 15:19:08 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+
 
 int		ft_atoi(const char *str);
 size_t	ft_strlen(const char *s);
@@ -27,6 +28,7 @@ void	ft_putchar(char c);
 
 int	ft_isdigit(char c);
 
+char * ft_strrchr(char *str, int c);
 int	ft_tolower(int c);
 int	ft_toupper(int c);
 int	ft_isalpha(char c);

@@ -1,24 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/13 12:11:35 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/13 15:25:33 by zcadinot         ###   ########.fr       */
+/*   Created: 2025/10/13 14:59:32 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/10/13 15:24:35 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-int main()
+char * ft_strrchr(char *str, int c)
 {
-	char *res;
-	char *str = "c  ";
-	int c = 'c';
-	res = ft_strrchr(str,c);
-	write(1,&res,1);
-	return (0);
+	int i;
+
+	i = 0;
+	char *temp;
+
+	temp = NULL;
+	while(str[i])
+	{
+		if (str[i] == c)
+			temp = &str[i];
+		i++;
+	}
+	return (temp);
 }
