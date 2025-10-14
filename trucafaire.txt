@@ -1,7 +1,5 @@
 🟩 Les plus simples :
 
-putendl_fd → comme putstr_fd mais ajoute '\n' à la fin.
-
 putnbr_fd → un peu plus logique : il faut gérer les entiers (récursivité ou division/modulo) et le signe négatif.
 
 🟨 Difficulté moyenne :
