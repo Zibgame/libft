@@ -1,7 +1,3 @@
-🟩 Les plus simples :
-
-putnbr_fd → un peu plus logique : il faut gérer les entiers (récursivité ou division/modulo) et le signe négatif.
-
 🟨 Difficulté moyenne :
 
 calloc → allocation + initialisation à 0 (attention au overflow de nmemb * size).
