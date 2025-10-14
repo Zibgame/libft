@@ -6,19 +6,15 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 12:11:35 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/13 15:25:33 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/14 09:15:00 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-int main()
+int	main(void)
 {
-	char *res;
-	char *str = "c  ";
-	int c = 'c';
-	res = ft_strrchr(str,c);
-	write(1,&res,1);
+	printf("Main");
 	return (0);
 }

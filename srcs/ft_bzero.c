@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/11 11:41:30 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 08:44:34 by zcadinot         ###   ########.fr       */
+/*   Created: 2025/10/14 08:11:40 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/10/14 08:22:07 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c)
+#include "libft.h"
+
+void	ft_bzero(void *s, size_t n)
 {
-	if (!(c >= 32 && c <= 126))
-		return (0);
-	return (1);
+	size_t			i;
+	unsigned char	*s2;
+
+	s2 = (unsigned char *)s;
+	i = 0;
+	while (i < n)
+	{
+		s2[i] = '\0';
+		i++;
+	}
 }
