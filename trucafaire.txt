@@ -1,0 +1,23 @@
+🟩 Les plus simples :
+
+putendl_fd → comme putstr_fd mais ajoute '\n' à la fin.
+
+putnbr_fd → un peu plus logique : il faut gérer les entiers (récursivité ou division/modulo) et le signe négatif.
+
+🟨 Difficulté moyenne :
+
+calloc → allocation + initialisation à 0 (attention au overflow de nmemb * size).
+
+substr → allouer une sous-chaîne à partir d’une position donnée. Gérer les cas limites (start > longueur, len trop long).
+
+striteri → appliquer une fonction à chaque caractère par référence. Assez simple mais demande rigueur dans les pointeurs.
+
+strmapi → comme striteri, mais retourne une nouvelle chaîne avec les caractères modifiés. Gestion mémoire à prévoir.
+
+🟥 Les plus avancées :
+
+itoa → convertir un int en char *. Doit gérer les nombres négatifs, INT_MIN, et allouer la bonne taille.
+
+strtrim → retirer les caractères d’un set au début et à la fin d’une chaîne. Gestion fine des indices et des cas vides.
+
+strnstr → recherche d’une sous-chaîne dans une autre avec une limite (len). Très piégeuse à cause des bornes et conditions d’arrêt.
