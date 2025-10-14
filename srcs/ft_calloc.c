@@ -6,25 +6,29 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:14:18 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 16:29:48 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/14 20:18:28 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include  "libft.h"
+#include "libft.h"
 
-void * calloc( size_t elementCount, size_t elementSize )
+void	*ft_calloc(size_t count, size_t size)
 {
-	size_t i;
-	void *place;
+	void			*place;
+	size_t			total;
+	size_t			i;
 
-	i = 0;
-	*place = malloc(elementCount * elementSize);
+	total = count * size;
+	if (count != 0 && total / count != size)
+		return (NULL);
+	place = malloc(total);
 	if (!place)
-		return NULL;
-	while(i != (elementCount * elementSize))
+		return (NULL);
+	i = 0;
+	while (i < total)
 	{
-		place[i] = 0;
+		((unsigned char *)place)[i] = 0;
 		i++;
 	}
-	return (*place);
+	return (place);
 }
