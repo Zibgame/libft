@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/12 20:58:37 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 21:04:36 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/14 21:17:09 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,5 +48,6 @@ void	ft_putendl_fd(char *str, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	*ft_calloc(size_t elementCount, size_t elementSize);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif

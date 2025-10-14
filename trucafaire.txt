@@ -1,9 +1,5 @@
 🟨 Difficulté moyenne :
 
-calloc → allocation + initialisation à 0 (attention au overflow de nmemb * size).
-
-substr → allouer une sous-chaîne à partir d’une position donnée. Gérer les cas limites (start > longueur, len trop long).
-
 striteri → appliquer une fonction à chaque caractère par référence. Assez simple mais demande rigueur dans les pointeurs.
 
 strmapi → comme striteri, mais retourne une nouvelle chaîne avec les caractères modifiés. Gestion mémoire à prévoir.
