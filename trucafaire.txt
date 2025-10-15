@@ -1,5 +1,71 @@
-🟨 Difficulté dur :
+ORDRE DES FONCTIONS BONUS LIBFT (du plus simple au plus dur)
 
-strtrim → retirer les caractères d’un set au début et à la fin d’une chaîne. Gestion fine des indices et des cas vides.
+1️⃣ ft_lstnew
+Prototype : t_list *ft_lstnew(void *content);
+- Crée un élément de liste.
+- Alloue la structure et initialise :
+  node->content = content;
+  node->next = NULL;
+- Niveau : Très facile 🟢
 
-strnstr → recherche d’une sous-chaîne dans une autre avec une limite (len). Très piégeuse à cause des bornes et conditions d’arrêt.
+2️⃣ ft_lstadd_front
+Prototype : void ft_lstadd_front(t_list **lst, t_list *new);
+- Ajoute un élément au début de la liste.
+- Logique :
+    new->next = *lst;
+    *lst = new;
+- Niveau : Facile 🟢
+
+3️⃣ ft_lstsize
+Prototype : int ft_lstsize(t_list *lst);
+- Compte le nombre d’éléments dans la liste.
+- Logique :
+    count = 0;
+    while (lst) { count++; lst = lst->next; }
+- Niveau : Facile 🟢
+
+4️⃣ ft_lstlast
+Prototype : t_list *ft_lstlast(t_list *lst);
+- Retourne le dernier élément de la liste.
+- Logique :
+    while (lst && lst->next)
+        lst = lst->next;
+    return (lst);
+- Niveau : Facile 🟢
+
+5️⃣ ft_lstadd_back
+Prototype : void ft_lstadd_back(t_list **lst, t_list *new);
+- Ajoute un élément à la fin de la liste.
+- Logique :
+    if (!*lst)
+        *lst = new;
+    else
+        ft_lstlast(*lst)->next = new;
+- Niveau : Moyen 🟡
+
+6️⃣ ft_lstdelone
+Prototype : void ft_lstdelone(t_list *lst, void (*del)(void *));
+- Supprime un seul élément.
+- Appelle d’abord del(lst->content), puis free(lst).
+- Niveau : Moyen 🟡
+
+7️⃣ ft_lstclear
+Prototype : void ft_lstclear(t_list **lst, void (*del)(void *));
+- Supprime toute la liste à partir d’un élément donné.
+- Boucle : supprime chaque élément avec del + free.
+- Met *lst = NULL à la fin.
+- Niveau : Assez difficile 🟠
+
+8️⃣ ft_lstiter
+Prototype : void ft_lstiter(t_list *lst, void (*f)(void *));
+- Applique une fonction f sur chaque content.
+- Logique :
+    while (lst) { f(lst->content); lst = lst->next; }
+- Niveau : Facile 🟢
+
+9️⃣ ft_lstmap
+Prototype : t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+- Itère sur la liste, applique f, et crée une nouvelle liste avec les résultats.
+- Si une allocation échoue → tout free avec del.
+- Combine tout ce que tu as appris.
+- Niveau : Difficile 🔴
