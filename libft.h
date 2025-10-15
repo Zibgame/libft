@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/12 20:58:37 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/15 09:10:40 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/15 10:39:35 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
 char	*ft_itoa(int nb);
+char	*ft_strtrim(char const *s1, char const *set);
 
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_putstr_fd(char *s, int fd);
