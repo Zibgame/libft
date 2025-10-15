@@ -1,34 +1,53 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmapi.c                                       :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/15 07:54:14 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/15 09:48:36 by zcadinot         ###   ########.fr       */
+/*   Created: 2025/10/15 09:46:59 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/10/15 09:47:06 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+static int	numlen(long n)
 {
-	char			*res;
-	unsigned int	i;
+	int	len;
 
-	if (!s || !f)
-		return (NULL);
-	res = malloc(ft_strlen(s) + 1);
+	if (n <= 0)
+		n *= -1;
+	len = (n == 0);
+	while (n > 0 && ++len)
+		n /= 10;
+	return (len);
+}
+
+char	*ft_itoa(int nb)
+{
+	long	n;
+	int		i;
+	char	*res;
+
+	n = nb;
+	i = numlen(n);
+	res = malloc((i + (nb < 0) + 1) * sizeof(char));
 	if (!res)
 		return (NULL);
-	i = 0;
-	while (s[i])
+	if (n < 0)
 	{
-		res[i] = f(i, s[i]);
+		res[0] = '-';
+		n *= -1;
 		i++;
 	}
 	res[i] = '\0';
+	if (n == 0)
+		res[--i] = '0';
+	while (n > 0)
+	{
+		res[--i] = (n % 10) + '0';
+		n /= 10;
+	}
 	return (res);
 }

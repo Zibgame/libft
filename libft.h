@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/12 20:58:37 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/15 07:55:44 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/15 09:10:40 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ int		ft_isprint(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+int		ft_strncmp(char *s1, char *s2, unsigned int n);
 
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
@@ -37,6 +38,7 @@ char	**ft_split(char const *s, char c);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
+char	*ft_itoa(int nb);
 
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_putstr_fd(char *s, int fd);

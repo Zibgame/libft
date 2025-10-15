@@ -6,11 +6,11 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 22:31:49 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/16 22:31:54 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/15 13:42:00 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strncmp(const char *s1, const char *s2, unsigned int n)
 {
 	unsigned int	i;
 	unsigned char	c1;

@@ -1,10 +1,4 @@
-🟨 Difficulté moyenne :
-
-strmapi → comme striteri, mais retourne une nouvelle chaîne avec les caractères modifiés. Gestion mémoire à prévoir.
-
-🟥 Les plus avancées :
-
-itoa → convertir un int en char *. Doit gérer les nombres négatifs, INT_MIN, et allouer la bonne taille.
+🟨 Difficulté dur :
 
 strtrim → retirer les caractères d’un set au début et à la fin d’une chaîne. Gestion fine des indices et des cas vides.
 
