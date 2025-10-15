@@ -1,7 +1,5 @@
 🟨 Difficulté moyenne :
 
-striteri → appliquer une fonction à chaque caractère par référence. Assez simple mais demande rigueur dans les pointeurs.
-
 strmapi → comme striteri, mais retourne une nouvelle chaîne avec les caractères modifiés. Gestion mémoire à prévoir.
 
 🟥 Les plus avancées :
