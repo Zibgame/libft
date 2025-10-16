@@ -1,29 +1,3 @@
-ORDRE DES FONCTIONS BONUS LIBFT (du plus simple au plus dur)
-
-1️⃣ ft_lstnew
-Prototype : t_list *ft_lstnew(void *content);
-- Crée un élément de liste.
-- Alloue la structure et initialise :
-  node->content = content;
-  node->next = NULL;
-- Niveau : Très facile 🟢
-
-2️⃣ ft_lstadd_front
-Prototype : void ft_lstadd_front(t_list **lst, t_list *new);
-- Ajoute un élément au début de la liste.
-- Logique :
-    new->next = *lst;
-    *lst = new;
-- Niveau : Facile 🟢
-
-3️⃣ ft_lstsize
-Prototype : int ft_lstsize(t_list *lst);
-- Compte le nombre d’éléments dans la liste.
-- Logique :
-    count = 0;
-    while (lst) { count++; lst = lst->next; }
-- Niveau : Facile 🟢
-
 4️⃣ ft_lstlast
 Prototype : t_list *ft_lstlast(t_list *lst);
 - Retourne le dernier élément de la liste.

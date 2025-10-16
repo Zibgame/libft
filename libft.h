@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/12 20:58:37 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/15 11:05:15 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/16 10:38:14 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,12 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}	t_list;
 
 int		ft_atoi(const char *str);
 int		ft_isdigit(int c);
@@ -26,10 +32,14 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strncmp(char *s1, char *s2, unsigned int n);
+int		ft_lstsize(t_list *lst);
 
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
+
+t_list *ft_lstlast(t_list *lst);
+t_list	*ft_lstnew(void *content);
 
 char	*ft_strdup(const char *s1);
 char	*ft_strchr(const char *s, int c);
@@ -43,7 +53,6 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 void	*ft_memset(void *s, int c, size_t n);
-void	ft_putstr_fd(char *s, int fd);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
@@ -54,5 +63,6 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	*ft_calloc(size_t elementCount, size_t elementSize);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_lstadd_front(t_list **lst, t_list *new);
 
 #endif
