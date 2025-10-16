@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 10:34:01 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/16 10:39:33 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/16 10:42:21 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 
 t_list *ft_lstlast(t_list *lst)
 {
-	while (lst)
+	while (lsti && lst->next)
 	{
 		lst = lst->next;
 	}
+	return(lst);
 }
