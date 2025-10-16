@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/12 20:58:37 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/16 10:38:14 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/16 12:02:19 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,8 @@ void	ft_putnbr_fd(int n, int fd);
 void	*ft_calloc(size_t elementCount, size_t elementSize);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_lstadd_front(t_list **lst, t_list *new);
+void ft_lstadd_back(t_list **lst, t_list *new);
+void ft_lstiter(t_list *lst, void (*f)(void *));
+void ft_lstdelone(t_list *lst, void (*del)(void *));
 
 #endif

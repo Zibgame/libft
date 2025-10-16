@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/10/16 10:34:01 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/16 10:42:53 by zcadinot         ###   ########.fr       */
+/*   Created: 2025/10/16 11:50:09 by zcadinot          #+#    #+#             */
+/*   Updated: 2025/10/16 11:59:34 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstlast(t_list *lst)
+void ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	while (lst && lst->next)
+	while(lst)
 	{
-		lst = lst->next;
+		f(lst->content);
+		lst = lst->next; 
 	}
-	return(lst);
 }

@@ -1,22 +1,3 @@
-4️⃣ ft_lstlast
-Prototype : t_list *ft_lstlast(t_list *lst);
-- Retourne le dernier élément de la liste.
-- Logique :
-    while (lst && lst->next)
-        lst = lst->next;
-    return (lst);
-- Niveau : Facile 🟢
-
-5️⃣ ft_lstadd_back
-Prototype : void ft_lstadd_back(t_list **lst, t_list *new);
-- Ajoute un élément à la fin de la liste.
-- Logique :
-    if (!*lst)
-        *lst = new;
-    else
-        ft_lstlast(*lst)->next = new;
-- Niveau : Moyen 🟡
-
 6️⃣ ft_lstdelone
 Prototype : void ft_lstdelone(t_list *lst, void (*del)(void *));
 - Supprime un seul élément.
@@ -29,13 +10,6 @@ Prototype : void ft_lstclear(t_list **lst, void (*del)(void *));
 - Boucle : supprime chaque élément avec del + free.
 - Met *lst = NULL à la fin.
 - Niveau : Assez difficile 🟠
-
-8️⃣ ft_lstiter
-Prototype : void ft_lstiter(t_list *lst, void (*f)(void *));
-- Applique une fonction f sur chaque content.
-- Logique :
-    while (lst) { f(lst->content); lst = lst->next; }
-- Niveau : Facile 🟢
 
 9️⃣ ft_lstmap
 Prototype : t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
