@@ -1,18 +1,5 @@
-6️⃣ ft_lstdelone
-Prototype : void ft_lstdelone(t_list *lst, void (*del)(void *));
-- Supprime un seul élément.
-- Appelle d’abord del(lst->content), puis free(lst).
-- Niveau : Moyen 🟡
-
-7️⃣ ft_lstclear
-Prototype : void ft_lstclear(t_list **lst, void (*del)(void *));
-- Supprime toute la liste à partir d’un élément donné.
-- Boucle : supprime chaque élément avec del + free.
-- Met *lst = NULL à la fin.
-- Niveau : Assez difficile 🟠
-
 9️⃣ ft_lstmap
-Prototype : t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+prototype : t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 - Itère sur la liste, applique f, et crée une nouvelle liste avec les résultats.
 - Si une allocation échoue → tout free avec del.
 - Combine tout ce que tu as appris.
