@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 02:21:06 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/17 02:36:48 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/17 02:59:29 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*temp;
 
 	if (!lst || !del)
-		return;
+		return ;
 	while (*lst)
 	{
 		temp = (*lst)->next;
@@ -27,4 +27,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	}
 	*lst = NULL;
 }
-
