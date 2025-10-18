@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/17 02:41:14 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/19 01:40:28 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:53:30 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		new_elem = ft_lstnew(new_content);
 		if (!new_elem)
 		{
+			del(new_content);
 			ft_lstclear(&new_lst, del);
 			return (NULL);
 		}
