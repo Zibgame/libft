@@ -1,6 +1,0 @@
-9️⃣ ft_lstmap
-prototype : t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-- Itère sur la liste, applique f, et crée une nouvelle liste avec les résultats.
-- Si une allocation échoue → tout free avec del.
-- Combine tout ce que tu as appris.
-- Niveau : Difficile 🔴
