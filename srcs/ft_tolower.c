@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 14:28:25 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/13 14:29:34 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:35:13 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,10 @@ int	ft_tolower(int c)
 	}
 	return (c);
 }
+
+// int main(void)
+// {
+//     printf("%c\n", ft_tolower('A'));
+//     printf("%c\n", ft_tolower('z'));
+//     return (0);
+// }

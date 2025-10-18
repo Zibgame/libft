@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 13:28:19 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 08:43:47 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:34:51 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,10 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
+
+// int main(void)
+// {
+//     printf("%d\n", ft_isascii('A'));
+//     printf("%d\n", ft_isascii(200));
+//     return (0);
+// }

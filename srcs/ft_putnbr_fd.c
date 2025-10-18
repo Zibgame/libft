@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:02:44 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 15:56:08 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:44:28 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,9 @@ void	ft_putnbr_fd(int n, int fd)
 		write(fd, &nb, 1);
 	}
 }
+
+// int main(void)
+// {
+//     ft_putnbr_fd(42, 1);
+//     return (0);
+// }

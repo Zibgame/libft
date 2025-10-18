@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 08:25:07 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 11:04:44 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:33:23 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,12 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+// int main(void)
+// {
+//     char src[] = "abcde";
+//     char dst[6];
+//     ft_memcpy(dst, src, 6);
+//     printf("%s\n", dst);
+//     return (0);
+// }

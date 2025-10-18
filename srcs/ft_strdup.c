@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/17 10:33:18 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 14:44:42 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:41:44 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdlib.h>
@@ -32,3 +32,11 @@ char	*ft_strdup(const char *src)
 	dup[i] = '\0';
 	return (dup);
 }
+
+// int main(void)
+// {
+//     char *s = ft_strdup("dupme");
+//     printf("%s\n", s);
+//     free(s);
+//     return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/11 11:41:30 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 08:44:34 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:35:01 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,10 @@ int	ft_isprint(int c)
 		return (0);
 	return (1);
 }
+
+// int main(void)
+// {
+//     printf("%d\n", ft_isprint(' '));
+//     printf("%d\n", ft_isprint('\n'));
+//     return (0);
+// }

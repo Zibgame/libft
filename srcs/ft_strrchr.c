@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 14:59:32 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/13 15:24:35 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:41:09 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,10 @@ char	*ft_strrchr(const char *s, int c)
 		last = (char *)&s[i];
 	return (last);
 }
+
+// int main(void)
+// {
+//     char *s = "abcabc";
+//     printf("%s\n", ft_strrchr(s, 'a'));
+//     return (0);
+// }

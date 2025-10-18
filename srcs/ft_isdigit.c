@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 12:41:06 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 10:16:07 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:34:38 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,10 @@ int	ft_isdigit(int c)
 	}
 	return (bool);
 }
+
+// int main(void)
+// {
+//     printf("%d\n", ft_isdigit('3'));
+//     printf("%d\n", ft_isdigit('a'));
+//     return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 21:01:20 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/14 23:44:37 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:31:57 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,11 @@ int	ft_atoi(const char *str)
 	}
 	return (sign * res);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     char *s = "   -42abc";
+//     printf("%d\n", ft_atoi(s));
+//     return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 09:56:58 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/15 11:15:42 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:43:14 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,3 +50,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	res[i] = '\0';
 	return (res);
 }
+
+// int main(void)
+// {
+//     char *s = ft_strtrim("  hello  ", " ");
+//     printf("%s\n", s);
+//     free(s);
+//     return (0);
+// }

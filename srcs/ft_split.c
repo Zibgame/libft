@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 11:17:15 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/15 11:17:21 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:43:48 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,3 +85,14 @@ char	**ft_split(char const *s, char c)
 	res[i] = NULL;
 	return (res);
 }
+
+// int main(void)
+// {
+//     char **tab = ft_split("a-b-c", '-');
+//     for (int i = 0; tab[i]; i++)
+//         printf("%s\n", tab[i]);
+//     for (int i = 0; tab[i]; i++)
+//         free(tab[i]);
+//     free(tab);
+//     return (0);
+// }

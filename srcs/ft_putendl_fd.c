@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 15:44:55 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 16:02:13 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:44:21 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,9 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
+
+// int main(void)
+// {
+//     ft_putendl_fd("Hello", 1);
+//     return (0);
+// }

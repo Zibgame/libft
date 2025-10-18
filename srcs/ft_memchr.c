@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 11:07:35 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 11:48:57 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:34:09 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+// int main(void)
+// {
+//     char *p = ft_memchr("abcdef", 'c', 6);
+//     if (p)
+//         printf("%s\n", p);
+//     return (0);
+// }

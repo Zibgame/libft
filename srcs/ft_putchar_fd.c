@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 08:50:00 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 08:52:47 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:44:08 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,9 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
+
+// int main(void)
+// {
+//     ft_putchar_fd('A', 1);
+//     return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/20 19:38:45 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/20 20:50:00 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:42:11 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,3 +49,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	res[i] = '\0';
 	return (res);
 }
+
+// int main(void)
+// {
+//     char *s = ft_strjoin("Hello", "World");
+//     printf("%s\n", s);
+//     free(s);
+//     return (0);
+// }

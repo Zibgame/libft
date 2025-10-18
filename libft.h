@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/12 20:58:37 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/17 03:03:29 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:26:58 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 
 t_list	*ft_lstlast(t_list *lst);
 t_list	*ft_lstnew(void *content);
-//t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 char	*ft_strdup(const char *s1);
 char	*ft_strchr(const char *s, int c);
@@ -69,5 +69,6 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
+void 	main(void);
 
 #endif

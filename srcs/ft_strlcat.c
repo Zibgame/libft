@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/20 15:00:00 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/07/20 15:00:00 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:42:02 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,11 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 		dest[dest_len + i] = '\0';
 	return (dest_len + src_len);
 }
+
+// int main(void)
+// {
+//     char dst[10] = "abc";
+//     ft_strlcat(dst, "def", 10);
+//     printf("%s\n", dst);
+//     return (0);
+// }

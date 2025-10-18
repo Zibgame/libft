@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 12:03:42 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 09:30:00 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:34:29 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,10 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
+
+// int main(void)
+// {
+//     printf("%d\n", ft_isalpha('A'));
+//     printf("%d\n", ft_isalpha('1'));
+//     return (0);
+// }

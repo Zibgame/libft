@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 10:59:14 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/15 11:03:25 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:41:34 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,10 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (0);
 }
+
+// int main(void)
+// {
+//     char *s = "hello world";
+//     printf("%s\n", ft_strnstr(s, "world", 11));
+//     return (0);
+// }

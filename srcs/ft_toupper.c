@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 14:22:08 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/13 14:24:44 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:35:32 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,10 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
+
+// int main(void)
+// {
+//     printf("%c\n", ft_toupper('a'));
+//     printf("%c\n", ft_toupper('Z'));
+//     return (0);
+// }

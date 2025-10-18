@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 07:54:14 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/15 09:48:36 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:43:30 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,15 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	res[i] = '\0';
 	return (res);
 }
+
+// char f(unsigned int i, char c)
+// {
+//     return (c + i);
+// }
+// int main(void)
+// {
+//     char *s = ft_strmapi("abc", f);
+//     printf("%s\n", s);
+//     free(s);
+//     return (0);
+// }

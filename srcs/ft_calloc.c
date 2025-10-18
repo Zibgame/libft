@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 16:14:18 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 20:18:28 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:32:52 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,15 @@ void	*ft_calloc(size_t count, size_t size)
 	}
 	return (place);
 }
+
+// ft_calloc.c
+// int main(void)
+// {
+//     char *p = ft_calloc(5, sizeof(char));
+//     if (!p)
+//         return (1);
+//     p[0] = 'A';
+//     printf("%c\n", p[0]);
+//     free(p);
+//     return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/16 10:34:01 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/17 03:01:04 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:39:37 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,12 @@ t_list	*ft_lstlast(t_list *lst)
 	}
 	return (lst);
 }
+
+// int main(void)
+// {
+//     t_list *a = ft_lstnew("first");
+//     ft_lstadd_back(&a, ft_lstnew("last"));
+//     t_list *last = ft_lstlast(a);
+//     printf("%s\n", (char *)last->content);
+//     return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/15 09:46:59 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/15 09:47:06 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:35:43 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,3 +51,11 @@ char	*ft_itoa(int nb)
 	}
 	return (res);
 }
+
+// int main(void)
+// {
+//     char *s = ft_itoa(-12345);
+//     printf("%s\n", s);
+//     free(s);
+//     return (0);
+// }

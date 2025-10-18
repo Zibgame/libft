@@ -6,7 +6,7 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 21:05:13 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 21:31:46 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:43:21 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,3 +49,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	res[i] = '\0';
 	return (res);
 }
+
+// int main(void)
+// {
+//     char *s = ft_substr("abcdef", 2, 3);
+//     printf("%s\n", s);
+//     free(s);
+//     return (0);
+// }

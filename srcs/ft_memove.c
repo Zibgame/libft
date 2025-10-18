@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 09:51:39 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 10:22:06 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:33:55 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,11 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+// int main(void)
+// {
+//     char s[10] = "12345";
+//     ft_memmove(s + 1, s, 5);
+//     printf("%s\n", s);
+//     return (0);
+// }

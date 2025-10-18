@@ -6,7 +6,7 @@
 /*   By: zcadinot <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/14 07:44:50 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/14 08:45:30 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/19 01:33:10 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,12 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+
+// int main(void)
+// {
+//     char buf[6];
+//     ft_memset(buf, 'x', 5);
+//     buf[5] = 0;
+//     printf("%s\n", buf);
+//     return (0);
+// }
