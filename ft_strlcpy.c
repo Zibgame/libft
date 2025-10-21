@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
+size_t	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
-	unsigned int	i;
+	size_t	i;
 
 	i = 0;
 	if (size == 0)
