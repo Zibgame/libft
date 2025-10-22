@@ -6,11 +6,13 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/20 15:00:00 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/19 01:42:02 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/22 10:44:15 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcat(char *dest, char *src, unsigned int size)
+#include "libft.h"
+
+size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
 	size_t			i;
 	size_t			dest_len;

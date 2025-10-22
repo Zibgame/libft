@@ -6,11 +6,13 @@
 /*   By: zcadinot <zcadinot@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 20:37:55 by zcadinot          #+#    #+#             */
-/*   Updated: 2025/10/19 01:40:49 by zcadinot         ###   ########.fr       */
+/*   Updated: 2025/10/22 10:43:58 by zcadinot         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlen(char *str)
+#include "libft.h"
+
+size_t	ft_strlen(const char *str)
 {
 	size_t	len;
 
